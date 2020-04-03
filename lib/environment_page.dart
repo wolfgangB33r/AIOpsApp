@@ -6,15 +6,7 @@ import 'package:AiOpsApp/problem_feed.dart';
 import 'package:AiOpsApp/event_feed.dart';
 import 'package:AiOpsApp/colors.dart';
 import 'package:AiOpsApp/futures/environment.dart';
-
-class EnvironmentScreenArguments {
-  final String title;
-  final String environmentUrl;
-  final String environmentSecret;
-  final String entityFilter;
-
-  EnvironmentScreenArguments(this.title, this.environmentUrl, this.environmentSecret, this.entityFilter);
-}
+import 'package:AiOpsApp/model/environment_args.dart';
 
 /*
  * Screen for showing all problem and event information for a given single Dynatrace environment. 

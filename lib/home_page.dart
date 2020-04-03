@@ -3,8 +3,14 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 
+import 'package:shared_preferences/shared_preferences.dart';
+
+
+import 'package:AiOpsApp/dialogs/add_environment_dialog.dart';
 import 'package:AiOpsApp/futures/environment.dart';
-import 'package:AiOpsApp/environment_page.dart';
+import 'package:AiOpsApp/model/environment_args.dart';
+
+
 
 class HomePage extends StatefulWidget {
   
@@ -47,8 +53,8 @@ class _HomePageState extends State<HomePage> {
         actions: <Widget>[
             IconButton(
               icon: Icon(Icons.add),
-              onPressed: () {
-                
+              onPressed: () { 
+                asyncAddEnvironmentDialog(context);
               },
             ),
         ],

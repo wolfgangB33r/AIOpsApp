@@ -23,6 +23,7 @@ dependencies:
     
   charts_flutter: any
   http: any
+  shared_preferences: any
   
   
 
