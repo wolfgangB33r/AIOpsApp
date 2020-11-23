@@ -32,13 +32,13 @@ Future<EnvironmentScreenArguments> asyncAddEnvironmentDialog(BuildContext contex
                       },
                     ),
                     TextField(
-                      decoration: new InputDecoration(labelText: 'Environment URL', hintText: 'eg. m342939.live.dynatrace.com'),
+                      decoration: new InputDecoration(labelText: 'Environment URL', hintText: 'eg. sample.live.dynatrace.com'),
                       onChanged: (value) {
                         envUrl = value;
                       },
                     ),
                     TextField(
-                      decoration: new InputDecoration(labelText: 'Api Token', hintText: 'eg. kfnR9LfnSYShU6qShiGxk'),
+                      decoration: new InputDecoration(labelText: 'Api Token', hintText: 'eg. sampletoken'),
                       onChanged: (value) {
                         envSecret = value;
                       },
